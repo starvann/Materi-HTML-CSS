@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+    <style>
+        .marked {
+            background-color: pink;
+            color: red;
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        .unmarked{
+            color: blue;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="marked">
+        <p>This element belongs to class marked</p>
+    </div>
+    <h1>This element does'nt belongs to any class</h1>
+    <p class="unmarked">This element belongs to class unmarked</p>
+    <h2 class="marked">This is an h2 and also have class marked</h2>
+    <h3 class="marked unmarked">This is an h3 and this element haas both classes</h3>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag selector</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: red;
+            background-color: red;
+        }
+
+        h2 {
+            text-align: right;
+            color: black;
+            background-color: red;
+        }
+        h3, div {
+            text-align: left;
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">This element is selected because it is h1</h1>
+    <p>This element is not selected</p>
+    <h2>This element is selected because is h2</h2>
+    <h3>This element is selected because is h3</h3>
+    <div>This is element is selected because it is div and kill have the same property as h3</div>
+</body>
+</html>

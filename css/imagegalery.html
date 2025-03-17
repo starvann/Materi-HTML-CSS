@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Galery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kumpulan Gambar</h2>
+    <p>Kumpulan gambar yang saya punya</p>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="pfp.png" alt="curriculum" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="logo.png" alt="classes" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="logoweb.png" alt="lucu" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="btc.png" alt="btc" style="width: 100%;">
+        </div>
+    </div>
+
+    <p>
+        Selalu menyimpan foto yang aesthetic
+    </p>
+</body>
+</html>
