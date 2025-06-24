@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form-grup {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+      }
+
+      .form-grup label {
+        width: 100px;
+        margin-right: 10px;
+        text-align: right;
+      }
+
+      .form-grup input {
+        flex: 1;
+        padding: 8px;
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form style="max-width: 500px; margin: 20px">
+      <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" />
+      </div>
+    </form>
+  </body>
+</html>

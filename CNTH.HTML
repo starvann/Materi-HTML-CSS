@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contoh 4 flexbox - card produk dengan tombol di bawah</title>
+    <style>
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 250px;
+        }
+        .product-image {
+            height: 150px;
+            background-color: #f5f5f5;
+            margin-bottom: 10px;
+        }
+        .product-info {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+        .buy-button {
+            padding: 8px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <h3>Produk 1</h3>
+                <p>Deskripsi produk singkat</p>
+                <p>Rp 100.000</p>
+            </div>
+            <button class="buy-button">Beli</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <h3>Produk 2</h3>
+                <p>Deskripsi produk singkat</p>
+                <p>Rp 150.000</p>
+            </div>
+            <button class="buy-button">Beli</button>
+        </div>
+    </div>
+</body>
+</html>

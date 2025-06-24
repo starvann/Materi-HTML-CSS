@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Container Aesthetic</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #fdfbfb;
+        color: #333;
+      }
+
+      .title {
+        text-align: center;
+        margin: 40px 0 20px;
+        font-size: 2rem;
+        color: #555;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 10px;
+      }
+
+      .container-1 .item {
+        width: 300px;
+        height: 200px;
+        border-radius: 15px;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .container-1 .bg1 {
+        background-image: url("https://source.unsplash.com/300x200/?sky");
+      }
+      .container-1 .bg2 {
+        background-image: url("https://source.unsplash.com/300x200/?mountain");
+      }
+
+      .container-1 .bg3 {
+        background-image: url("https://source.unsplash.com/300x200/?beach");
+      }
+
+      .container-2 .item {
+        background-color: #e0e7ff;
+        padding: 20px;
+        border-radius: 12px;
+        width: 240px;
+        text-align: justify;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 0.95rem;
+        transition: transform 0.2s ease;
+      }
+      .container-2 .item:hover {
+        transform: translateY(-5px);
+      }
+
+      .container-3 .card {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 250px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s ease;
+      }
+      .container-3 .card:hover {
+        transform: scale(1.03);
+      }
+
+      .container-3 img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .container-3 p {
+        padding: 15px;
+        font-size: 0.95rem;
+          color: #555;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Tugas HTML & CSS - Flex Container</h1>
+
+    <section class="container container-3">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?nature" alt="Nature" />
+      </div>
+      <div class="card">
+        <img
+          src="https://source.unsplash.com/300x200/?technology"
+          alt="Technology"
+        />
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?food" alt="Food" />
+      </div>
+    </section>
+
+    <section class="container container-2">
+      <div class="item">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+      <div class="item">
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+      <div class="item">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </div>
+      <div class="item">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse.
+      </div>
+    </section>
+
+    <section class="container container-3">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?nature" alt="Nature" />
+        <p>Pemandangan alam yang menenangkan hati dan pikiran.</p>
+      </div>
+      <div class="card">
+        <img
+          src="https://source.unsplash.com/300x200/?technology"
+          alt="Technology"
+        />
+        <p>Teknologi berkembang pesat di era digital saat ini.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?food" alt="Food" />
+        <p>Makanan yang lezat bisa mengembalikan semangat belajar.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?books" alt="Books" />
+        <p>Membaca buku membuka jendela dunia dan memperluas wawasan.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?coding" alt="Coding" />
+        <p>Ngoding itu seni, bukan hanya soal logika dan sintaks.</p>
+      </div>
+    </section>
+  </body>
+</html>

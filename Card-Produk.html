@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        width: 250px;
+      }
+
+      .product-image {
+        height: 150px;
+        background-color: #f5f5f5;
+        margin-bottom: 10px;
+      }
+
+      .product-info {
+        flex-grow: 1;
+        margin-bottom: 15px;
+      }
+
+      .buy-button {
+        padding: 8px;
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-container">
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-info">
+          <h3>GTR-R35</h3>
+          <p>
+            Mobil GTR-R35 mobil keren dengan penggerak belakang siap untuk drift
+          </p>
+          <p>Rp. 1000.000.000.000</p>
+        </div>
+        <button class="buy-button">Beli</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image"></div>
+        <div class="product-info">
+          <h3>BMW C2000</h3>
+          <p>Mobil BMW C2000, semuanya bagus minusnya onderdil nya MUAHALLLL</p>
+          <p>Rp. 1000.000.000.000</p>
+        </div>
+        <button class="buy-button">Beli</button>
+      </div>
+    </div>
+  </body>
+</html>

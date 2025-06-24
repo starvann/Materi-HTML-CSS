@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galery Kami 1</title>
+    <style>
+      .container {
+        min-height: 500px;
+        border: 1px solid #eee;
+        margin: 30px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .container div {
+        margin: 5px;
+        flex: 1 1 200px;
+        min-height: 200px;
+      }
+
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .satu {
+        background-image: url(kucingkuat.jpg);
+      }
+
+      .dua {
+        background-image: url(kucingdua.jpg);
+      }
+
+      .tiga {
+        background-image: url(kucing3.jpg);
+      }
+
+      .empat {
+        background-image: url(kucing4.jpg);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .container div {
+          flex: 1 1 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Galery Kami</h1>
+    <div class="container">
+      <div class="satu"></div>
+      <div class="dua"></div>
+      <div class="tiga"></div>
+      <div class="empat"></div>
+    </div>
+  </body>
+</html>
